@@ -21,8 +21,7 @@
 <body>
     {{-- Site_header --}}
     <header id="site_header">
-
-    
+        
     </header>
     {{-- /Site_header --}}
 
