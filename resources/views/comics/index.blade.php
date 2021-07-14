@@ -2,8 +2,9 @@
 
 {{-- Main Content --}}
 @section('main_content')
-    <a href="{{route('comics.create')}}">Edit</a>
-    <table class="table">
+    {{-- <a href="{{route('comics.create')}}">Add new comics</a> --}}
+    <div class="container-xl text-center p-3">
+        <table class="table">
         <thead>
             <tr>
                 <th>ID</th>
@@ -27,5 +28,7 @@
             @endforeach
         </tbody>
     </table>
+    </div>
+    
 @endsection
 {{-- /Main Content --}}
