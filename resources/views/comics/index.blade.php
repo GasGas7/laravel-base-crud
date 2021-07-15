@@ -13,6 +13,7 @@
                     <th>TITOLO</th>
                     <th>AUTORE</th>
                     <th>PREZZO</th>
+                    <th>ACTIONS</th>
                 </tr>
             </thead>
             <tbody>
@@ -22,6 +23,10 @@
                         <td>{{ $comic->titolo }}</td>
                         <td>{{ $comic->autore }}</td>
                         <td>{{ $comic->prezzo }}</td>
+                        <td>
+                            <a href="{{route('comics.edit', $comic->id)}}">Edit</a> | 
+                            <a href="#">Delete</a>
+                        </td>
                     </tr>
                 @endforeach
             </tbody>
