@@ -44,7 +44,7 @@ class ComicController extends Controller
         $comic->prezzo=$request->prezzo;
         $comic->save();
 
-        return redirect('comics');
+        return redirect()->route('comics.index');
     }
 
     /**
