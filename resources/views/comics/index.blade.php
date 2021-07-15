@@ -22,6 +22,7 @@
                         <td>{{ $comic->autore }}</td>
                         <td>{{ $comic->prezzo }}</td>
                         <td class="d-flex justify-content-center">
+                            <a class="px-3" href="{{ route('comics.show', $comic->id) }}">View</a> |
                             <a class="px-3" href="{{ route('comics.edit', $comic->id) }}">Edit</a> |
                             <form action="{{route('comics.destroy',$comic->id)}}" method="POST">
                                 @csrf

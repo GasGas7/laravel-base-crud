@@ -54,8 +54,9 @@ class ComicController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show(Comic $comic)
-    {
-        //
+    {   
+        
+        return view('comics.show', compact('comic'));
     }
 
     /**
